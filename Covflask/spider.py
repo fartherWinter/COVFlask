@@ -290,10 +290,24 @@ def update_weijian():
 
 
 if __name__ == '__main__':
-    # insert_history()
-    # update_details()
-    # get_baidu_data()
-    # get_tencent_data()
-    # update_event()
-    # get_weijian_data()
-    update_weijian()
+   l =len(sys.argv)
+    if l == 1:
+        s = """
+        输入参数
+        参数说明：
+        up_his:更新历史表
+        up_event:更新资讯表
+        up_det:更新每日详情
+        up_reg:更新风险地区
+        """
+        print(s)
+    else:
+        order = sys.argv[1]
+        if order== 'up_his':
+            update_history()
+        elif order=='up_det':
+            update_details()
+        elif order=='up_event':
+            update_event()
+        elif order=='up_reg':
+            update_weijian()
