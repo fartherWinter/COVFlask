@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time    : 2022/4/14 18:25
-# @Author  : 陈念
+# @Author  : chen
 # @File    : utils.py
 # @Software: PyCharm
 import time
